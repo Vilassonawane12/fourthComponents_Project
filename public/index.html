@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>four componante</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+</head>
+
+<body>
+    <!-- digital clock & Weather start -->
+    <div class="datetime">
+        <div class="time">
+            <span id="hours">00</span>
+            <span id="hours">:</span>
+            <span id="minutes">00</span>
+            <span id="hours">:</span>
+            <span id="second">00</span>
+            <span id="period">AM</span>
+            <div id="date"></div>
+        </div>
+        <!-- Weather App -->
+        <div class="weather">
+            <h3 id="temperature">23&deg; C <span class="material-symbols-outlined icon">tire_repair</span></h3>
+            <div class="search-box">
+                <input type="text" placeholder="Patchy rain possible">
+                <span  id="location-name">varanasi <span class="material-symbols-outlined" id="search-btn">edit</span></span>
+            </div>
+            <div class="all-icon">
+                <span><span class="material-symbols-outlined icon-blue">water_drop</span> <span id="humidity">37%</span></span> 
+                <span><span class="material-symbols-outlined icon-yellow">tire_repair</span> <span id="pressure">1010mB</span></span> 
+                <span><span class="material-symbols-outlined icon">air </span> <span id="wind-speed">37 km/h</span></span> 
+            </div>
+
+        </div>
+    </div>
+    <!-- digital clock & Weather end -->
+
+
+    <!-- Favourite Sites Start -->
+
+    <main class="main">
+        <div class="container">
+            <h2>Favourite Sites <button type="button" id="add-site"><span class="material-symbols-outlined icon">bookmark_star</span></button></h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Title</th>
+                        <th>URL</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody  id="todoListfavourite">
+                    <!-- Add your table rows here -->
+                    <!-- <tr>
+                        <td>1</td>
+                        <td>Microsoft</td>
+                        <td><a href="#">www.microsoft.com</a></td>
+                        <td>
+                            <button>Edit</button>
+                        </td>
+                        <td>
+                            <button>Delete</button>
+                        </td>
+                    </tr> -->
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+        </div>
+
+
+        <!--  favourite end -->
+
+        <!--  Todo List Start -->
+
+        <div class="container">
+            <h2>Todo List <span class="material-symbols-outlined icon" onclick="showModal()">edit_square</span></h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Todo</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="records">
+                    <!-- Add your table rows here -->
+                </tbody>
+            </table>
+        </div>
+    
+        <!-- Modal Box -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="hideModal()">&times;</span>
+                <h2>Add New Item</h2>
+                <input type="text" id="todo-title" name="todo-title" placeholder="Add Todo Item">
+                <div class="modal-buttons">
+                    <button id="cancel-button" onclick="hideModal()">Cancel</button>
+                    <button id="add-button">Add Item</button>
+                </div>
+            </div>
+        </div>
+       
+       
+
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

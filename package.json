@@ -1,0 +1,20 @@
+{
+  "name": "fourthcomponents_project",
+  "version": "1.0.0",
+  "description": "This fourth components projects",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "Frotent",
+    "backend",
+    "project"
+  ],
+  "author": "Vilas Sonawane",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
